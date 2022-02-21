@@ -1,0 +1,16 @@
+:root {
+  --font-bold: 40px;
+  --font-regular: 25px;
+  
+  --color-grey: #292c35;
+  --color-zbs: #162142;
+  --color-boron: #111827;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-violet: #bd1abd;
+  --color-hover: #ee82ee;
+  --color-grey2:#26272c;
+  --color-grey3:#1a1b20;
+  --color-white2: #d6d6d9;
+  --color-black: hsl(225, 25%, 10%);
+}
