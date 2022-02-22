@@ -13,4 +13,6 @@
   --color-grey3:#1a1b20;
   --color-white2: #d6d6d9;
   --color-black: hsl(225, 25%, 10%);
+
+  --color-white-05: rgba(255, 255, 255, .05);
 }

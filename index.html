@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/styles/colors.css" />
     <link rel="stylesheet" href="./assets/styles/font.css" />
-    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="header wrapper">
       <nav class="header-nav">
         <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="#hero" class="header-nav__link link">Me;)</a>
+          </li>
           <li class="header-nav__item">
             <a href="#about-me" class="header-nav__link link">About Me</a>
           </li>
@@ -24,16 +28,16 @@
             <a href="#experience" class="header-nav__link link">Experience</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link">Courses</a>
+            <a href="#courses" class="header-nav__link link">Courses</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link">Language</a>
+            <a href="#language" class="header-nav__link link">Language</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main wrapper">
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="hero__left-side">
           <h1 class="hero-title">Viacheslav Ignatev</h1>
           <p class="hero-description">
@@ -81,88 +85,281 @@
       
       </section>
       <section id="skills" class="skills">
-        <h2 class="skills-title">Skills</h2>
-        <ul class="skills-items">
-          <li class="skills-card">
-            <div class="card-header">
-              <i class="card-header__title-icon">
-                <svg class="skills-icon">
-                  <use xlink:href="./assets/svg/sprite.svg#html"></use>
-                </svg>
-              </i>
-              <h3 class="card-header__title">HTML</h3>
-            </div>
-            <progress class="skills-card__progress-bar" value="60" max="100"></progress>
-          </li>
-          <li class="skills-card">
-            <div class="card-header">
-              <i class="card-header__title-icon">
-                <svg class="skills-icon">
-                  <use xlink:href="./assets/svg/sprite.svg#css"></use>
-                </svg>
-              </i>
-              <h3 class="card-header__title">CSS</h3>
-            </div>
-            <progress class="skills-card__progress-bar" value="60" max="100"></progress>
-          </li>
-          <li class="skills-card">
-            <div class="card-header">
-              <i class="card-header__title-icon">
-                <svg class="skills-icon">
-                  <use xlink:href="./assets/svg/sprite.svg#javascript"></use>
-                </svg>
-              </i>
-              <h3 class="card-header__title">JavaScript</h3>
-            </div>
-            <progress class="skills-card__progress-bar" value="25" max="100"></progress>
-          </li>
-          <li class="skills-card">
-            <div class="card-header">
-              <i class="card-header__title-icon">
-                <svg class="skills-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="25px"><path fill="#F4511E" d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"/></svg>
-              </i>
-              <h3 class="card-header__title">Git</h3>
-            </div>
-            <progress class="skills-card__progress-bar" value="50" max="100"></progress>
-          </li>
-          <li class="skills-card">
-            <div class="card-header">
-              <i class="card-header__title-icon">
-                <svg class="skills-icon">
-                  <use xlink:href="./assets/svg/sprite.svg#figma"></use>
-                </svg>
-              </i>
-              <h3 class="card-header__title">Figma</h3>
-            </div>
-            <progress class="skills-card__progress-bar" value="40" max="100"></progress>
-          </li>
-          <li class="skills-card">
-            <div class="card-header">
-              <i class="card-header__title-icon">
-                <svg class="skills-icon">
-                  <use xlink:href="./assets/svg/sprite.svg#github"></use>
-                </svg>
-              </i>
-              <h3 class="card-header__title">GitHub</h3>
-            </div>
-            <progress class="skills-card__progress-bar" value="60" max="100"></progress>
-          </li>
-          <li class="skills-card">
-            <div class="card-header">
-              <i class="card-header__title-icon">
-                <svg class="skills-icon" fill="#ffa500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" width="25px" height="25px"><path d="M 5 5 L 5 6 L 5 27 L 27 27 L 27 5 L 5 5 z M 7 7 L 25 7 L 25 25 L 7 25 L 7 7 z M 22 10 L 18 16 L 9 16 L 22 21 L 22 10 z"/></svg>
-              </i>
-              <h3 class="card-header__title">FaceIt</h3>
-              
-            </div>
-            <progress class="skills-card__progress-bar" value="100" max="100"></progress>
-          </li>
-        </ul>
+        <div class="skills__title-wrapper">
+          <h2 class="skills-title">Skills</h2>
+        </div>
+        <div class="skills-items__wrapper">
+          <ul class="skills-items">
+            <li class="skills-card">
+              <div class="card-header">
+                <i class="card-header__title-icon">
+                  <svg class="skills-icon">
+                    <use xlink:href="./assets/svg/sprite.svg#html"></use>
+                  </svg>
+                </i>
+                <h3 class="card-header__title">HTML</h3>
+              </div>
+              <progress class="skills-card__progress-bar" value="60" max="100"></progress>
+            </li>
+            <li class="skills-card">
+              <div class="card-header">
+                <i class="card-header__title-icon">
+                  <svg class="skills-icon">
+                    <use xlink:href="./assets/svg/sprite.svg#css"></use>
+                  </svg>
+                </i>
+                <h3 class="card-header__title">CSS</h3>
+              </div>
+              <progress class="skills-card__progress-bar" value="60" max="100"></progress>
+            </li>
+            <li class="skills-card">
+              <div class="card-header">
+                <i class="card-header__title-icon">
+                  <svg class="skills-icon">
+                    <use xlink:href="./assets/svg/sprite.svg#javascript"></use>
+                  </svg>
+                </i>
+                <h3 class="card-header__title">JavaScript</h3>
+              </div>
+              <progress class="skills-card__progress-bar" value="25" max="100"></progress>
+            </li>
+            <li class="skills-card">
+              <div class="card-header">
+                <i class="card-header__title-icon">
+                  <svg class="skills-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="25px"><path fill="#F4511E" d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"/></svg>
+                </i>
+                <h3 class="card-header__title">Git</h3>
+              </div>
+              <progress class="skills-card__progress-bar" value="50" max="100"></progress>
+            </li>
+            <li class="skills-card">
+              <div class="card-header">
+                <i class="card-header__title-icon">
+                  <svg class="skills-icon">
+                    <use xlink:href="./assets/svg/sprite.svg#figma"></use>
+                  </svg>
+                </i>
+                <h3 class="card-header__title">Figma</h3>
+              </div>
+              <progress class="skills-card__progress-bar" value="40" max="100"></progress>
+            </li>
+            <li class="skills-card">
+              <div class="card-header">
+                <i class="card-header__title-icon">
+                  <svg class="skills-icon">
+                    <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                  </svg>
+                </i>
+                <h3 class="card-header__title">GitHub</h3>
+              </div>
+              <progress class="skills-card__progress-bar" value="60" max="100"></progress>
+            </li>
+            <li class="skills-card">
+              <div class="card-header">
+                <i class="card-header__title-icon">
+                  <svg class="skills-icon" fill="#ffa500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" width="25px" height="25px"><path d="M 5 5 L 5 6 L 5 27 L 27 27 L 27 5 L 5 5 z M 7 7 L 25 7 L 25 25 L 7 25 L 7 7 z M 22 10 L 18 16 L 9 16 L 22 21 L 22 10 z"/></svg>
+                </i>
+                <h3 class="card-header__title">FaceIt</h3>
+                
+              </div>
+              <progress class="skills-card__progress-bar" value="100" max="100"></progress>
+            </li>
+          </ul>
+        </div>
+        
       </section>
-      <section id="experience" class="experience"></section>
-      <section class="courses"></section>
-      <section class="language"></section>
+      <!-- ____________ -->
+      <section id="experience" class="experience">
+        <h2 class="exp-title">Experience</h2>
+        <div class="swiper my-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="exp__img-wrapper">
+                <img class="exp-image" src="./assets/img/batman-min.PNG" alt="batman-promo">
+                <div class="exp__descr-block">
+                  <div class="exp__left-side">
+                    <h3 class="exp-item__title">Batman Promo</h3>
+                    <p class="exp-item__descrp">I accidentally found a five-day intensive from Methed,
+                      and made up a batman promo page, learned small life hacks:)
+                    </p>
+                  </div>
+                  <div class="exp-item__links">
+                    <i class="exp-item__icon">
+                      <svg class="exp-icon" style="width: 25px; height:25px;">
+                        <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                      </svg>
+                    </i>
+                      <a target="blank" href="https://github.com/s4m5apu3l/methed__promo" class="exp-item__url exp-item__repo-url">Repo</a>
+                    <i class="exp-item__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="23px"><path fill="#fff" d="M34,24c0,5.521-4.479,10-10,10s-10-4.479-10-10s4.479-10,10-10S34,18.479,34,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1ya" x1="5.789" x2="31.324" y1="34.356" y2="20.779" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4caf50"/><stop offset=".489" stop-color="#4aaf50"/><stop offset=".665" stop-color="#43ad50"/><stop offset=".79" stop-color="#38aa50"/><stop offset=".892" stop-color="#27a550"/><stop offset=".978" stop-color="#11a050"/><stop offset="1" stop-color="#0a9e50"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1ya)" d="M31.33,29.21l-8.16,14.77C12.51,43.55,4,34.76,4,24C4,12.96,12.96,4,24,4v11 c-4.97,0-9,4.03-9,9s4.03,9,9,9C27.03,33,29.7,31.51,31.33,29.21z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yb" x1="33.58" x2="33.58" y1="6" y2="34.797" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd747"/><stop offset=".482" stop-color="#ffd645"/><stop offset=".655" stop-color="#fed43e"/><stop offset=".779" stop-color="#fccf33"/><stop offset=".879" stop-color="#fac922"/><stop offset=".964" stop-color="#f7c10c"/><stop offset="1" stop-color="#f5bc00"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yb)" d="M44,24c0,11.05-8.95,20-20,20h-0.84l8.17-14.79C32.38,27.74,33,25.94,33,24 c0-4.97-4.03-9-9-9V4c7.81,0,14.55,4.48,17.85,11C43.21,17.71,44,20.76,44,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yc" x1="36.128" x2="11.574" y1="44.297" y2="28.954" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f7572f"/><stop offset=".523" stop-color="#f7552d"/><stop offset=".712" stop-color="#f75026"/><stop offset=".846" stop-color="#f7461b"/><stop offset=".954" stop-color="#f7390a"/><stop offset="1" stop-color="#f73100"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yc)" d="M41.84,15H24c-4.97,0-9,4.03-9,9c0,1.49,0.36,2.89,1.01,4.13H16L7.16,13.26H7.14 C10.68,7.69,16.91,4,24,4C31.8,4,38.55,8.48,41.84,15z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yd" x1="19.05" x2="28.95" y1="30.95" y2="21.05" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yd)" d="M31,24c0,3.867-3.133,7-7,7s-7-3.133-7-7s3.133-7,7-7S31,20.133,31,24z"/></svg>
+                    </i>
+                      <a target="blank" href="https://s4m5apu3l.github.io/methed__promo/" class="exp-item__url exp-item__deploy">Deploy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="exp__img-wrapper">
+                <img class="exp-image" src="./assets/img/portfolio-min.PNG" alt="portfolio-promo">
+                <div class="exp__descr-block">
+                  <div class="exp__left-side">
+                    <h3 class="exp-item__title">Portfolio Task</h3>
+                    <p class="exp-item__descrp">This task from <span><a target="blank" style="color: aqua;" href="https://rs.school/"> RSSCHOOL</a></span>. I think that in this task I learned a lot of new things, 
+                      learned how to work with DOM elements, dark theme toggle, how to change the language, 
+                      how to connect swiper, and a lot of new things.
+                    </p>
+                  </div>
+                  <div class="exp-item__links">
+                    <i class="exp-item__icon">
+                      <svg class="exp-icon" style="width: 25px; height:25px;">
+                        <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                      </svg>
+                    </i>
+                      <a target="blank" href="https://github.com/s4m5apu3l/portfolio-demo-for-swiper" class="exp-item__url exp-item__repo-url">Repo</a>
+                    <i class="exp-item__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="23px"><path fill="#fff" d="M34,24c0,5.521-4.479,10-10,10s-10-4.479-10-10s4.479-10,10-10S34,18.479,34,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1ya" x1="5.789" x2="31.324" y1="34.356" y2="20.779" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4caf50"/><stop offset=".489" stop-color="#4aaf50"/><stop offset=".665" stop-color="#43ad50"/><stop offset=".79" stop-color="#38aa50"/><stop offset=".892" stop-color="#27a550"/><stop offset=".978" stop-color="#11a050"/><stop offset="1" stop-color="#0a9e50"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1ya)" d="M31.33,29.21l-8.16,14.77C12.51,43.55,4,34.76,4,24C4,12.96,12.96,4,24,4v11 c-4.97,0-9,4.03-9,9s4.03,9,9,9C27.03,33,29.7,31.51,31.33,29.21z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yb" x1="33.58" x2="33.58" y1="6" y2="34.797" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd747"/><stop offset=".482" stop-color="#ffd645"/><stop offset=".655" stop-color="#fed43e"/><stop offset=".779" stop-color="#fccf33"/><stop offset=".879" stop-color="#fac922"/><stop offset=".964" stop-color="#f7c10c"/><stop offset="1" stop-color="#f5bc00"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yb)" d="M44,24c0,11.05-8.95,20-20,20h-0.84l8.17-14.79C32.38,27.74,33,25.94,33,24 c0-4.97-4.03-9-9-9V4c7.81,0,14.55,4.48,17.85,11C43.21,17.71,44,20.76,44,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yc" x1="36.128" x2="11.574" y1="44.297" y2="28.954" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f7572f"/><stop offset=".523" stop-color="#f7552d"/><stop offset=".712" stop-color="#f75026"/><stop offset=".846" stop-color="#f7461b"/><stop offset=".954" stop-color="#f7390a"/><stop offset="1" stop-color="#f73100"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yc)" d="M41.84,15H24c-4.97,0-9,4.03-9,9c0,1.49,0.36,2.89,1.01,4.13H16L7.16,13.26H7.14 C10.68,7.69,16.91,4,24,4C31.8,4,38.55,8.48,41.84,15z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yd" x1="19.05" x2="28.95" y1="30.95" y2="21.05" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yd)" d="M31,24c0,3.867-3.133,7-7,7s-7-3.133-7-7s3.133-7,7-7S31,20.133,31,24z"/></svg>
+                    </i>
+                      <a target="blank" href="https://s4m5apu3l.github.io/portfolio-demo-for-swiper/" class="exp-item__url exp-item__deploy">Deploy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="exp__img-wrapper">
+                <img class="exp-image" src="./assets/img/anime finder-min.PNG" alt="anime-promo">
+                <div class="exp__descr-block">
+                  <div class="exp__left-side">
+                    <h3 class="exp-item__title">Anime Finder</h3>
+                    <p class="exp-item__descrp">Also a task from rs school, simple search engine. Here i learned how to connect 
+                      API projects to the site, on assignment, it was necessary to make a movie search engine, 
+                      but i did it differently.
+                    </p>
+                  </div>
+                  <div class="exp-item__links">
+                    <i class="exp-item__icon">
+                      <svg class="exp-icon" style="width: 25px; height:25px;">
+                        <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                      </svg>
+                    </i>
+                      <a target="blank" href="https://github.com/s4m5apu3l/anime-finder" class="exp-item__url ">Repo</a>
+                    <i class="exp-item__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="23px"><path fill="#fff" d="M34,24c0,5.521-4.479,10-10,10s-10-4.479-10-10s4.479-10,10-10S34,18.479,34,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1ya" x1="5.789" x2="31.324" y1="34.356" y2="20.779" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4caf50"/><stop offset=".489" stop-color="#4aaf50"/><stop offset=".665" stop-color="#43ad50"/><stop offset=".79" stop-color="#38aa50"/><stop offset=".892" stop-color="#27a550"/><stop offset=".978" stop-color="#11a050"/><stop offset="1" stop-color="#0a9e50"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1ya)" d="M31.33,29.21l-8.16,14.77C12.51,43.55,4,34.76,4,24C4,12.96,12.96,4,24,4v11 c-4.97,0-9,4.03-9,9s4.03,9,9,9C27.03,33,29.7,31.51,31.33,29.21z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yb" x1="33.58" x2="33.58" y1="6" y2="34.797" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd747"/><stop offset=".482" stop-color="#ffd645"/><stop offset=".655" stop-color="#fed43e"/><stop offset=".779" stop-color="#fccf33"/><stop offset=".879" stop-color="#fac922"/><stop offset=".964" stop-color="#f7c10c"/><stop offset="1" stop-color="#f5bc00"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yb)" d="M44,24c0,11.05-8.95,20-20,20h-0.84l8.17-14.79C32.38,27.74,33,25.94,33,24 c0-4.97-4.03-9-9-9V4c7.81,0,14.55,4.48,17.85,11C43.21,17.71,44,20.76,44,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yc" x1="36.128" x2="11.574" y1="44.297" y2="28.954" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f7572f"/><stop offset=".523" stop-color="#f7552d"/><stop offset=".712" stop-color="#f75026"/><stop offset=".846" stop-color="#f7461b"/><stop offset=".954" stop-color="#f7390a"/><stop offset="1" stop-color="#f73100"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yc)" d="M41.84,15H24c-4.97,0-9,4.03-9,9c0,1.49,0.36,2.89,1.01,4.13H16L7.16,13.26H7.14 C10.68,7.69,16.91,4,24,4C31.8,4,38.55,8.48,41.84,15z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yd" x1="19.05" x2="28.95" y1="30.95" y2="21.05" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yd)" d="M31,24c0,3.867-3.133,7-7,7s-7-3.133-7-7s3.133-7,7-7S31,20.133,31,24z"/></svg>
+                    </i>
+                      <a target="blank" href="https://s4m5apu3l.github.io/anime-finder/" class="exp-item__url ">Deploy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="exp__img-wrapper">
+                <img class="exp-image" src="./assets/img/audio-min.PNG" alt="audioplayer-promo">
+                <div class="exp__descr-block">
+                  <div class="exp__left-side">
+                    <h3 class="exp-item__title">Audio player</h3>
+                    <p class="exp-item__descrp">Very simple audioplayer. In this task it was necessary to make an audio player, 
+                      which i actually did)
+                    </p>
+                  </div>
+                  <div class="exp-item__links">
+                    <i class="exp-item__icon">
+                      <svg class="exp-icon" style="width: 25px; height:25px;">
+                        <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                      </svg>
+                    </i>
+                      <a target="blank" href="https://github.com/rolling-scopes-school/s4m5apu3l-JSFEPRESCHOOL/tree/js30-media-hints/media-hints/audio-player" class="exp-item__url exp-item__repo-url">Repo</a>
+                    <i class="exp-item__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="23px"><path fill="#fff" d="M34,24c0,5.521-4.479,10-10,10s-10-4.479-10-10s4.479-10,10-10S34,18.479,34,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1ya" x1="5.789" x2="31.324" y1="34.356" y2="20.779" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4caf50"/><stop offset=".489" stop-color="#4aaf50"/><stop offset=".665" stop-color="#43ad50"/><stop offset=".79" stop-color="#38aa50"/><stop offset=".892" stop-color="#27a550"/><stop offset=".978" stop-color="#11a050"/><stop offset="1" stop-color="#0a9e50"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1ya)" d="M31.33,29.21l-8.16,14.77C12.51,43.55,4,34.76,4,24C4,12.96,12.96,4,24,4v11 c-4.97,0-9,4.03-9,9s4.03,9,9,9C27.03,33,29.7,31.51,31.33,29.21z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yb" x1="33.58" x2="33.58" y1="6" y2="34.797" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd747"/><stop offset=".482" stop-color="#ffd645"/><stop offset=".655" stop-color="#fed43e"/><stop offset=".779" stop-color="#fccf33"/><stop offset=".879" stop-color="#fac922"/><stop offset=".964" stop-color="#f7c10c"/><stop offset="1" stop-color="#f5bc00"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yb)" d="M44,24c0,11.05-8.95,20-20,20h-0.84l8.17-14.79C32.38,27.74,33,25.94,33,24 c0-4.97-4.03-9-9-9V4c7.81,0,14.55,4.48,17.85,11C43.21,17.71,44,20.76,44,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yc" x1="36.128" x2="11.574" y1="44.297" y2="28.954" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f7572f"/><stop offset=".523" stop-color="#f7552d"/><stop offset=".712" stop-color="#f75026"/><stop offset=".846" stop-color="#f7461b"/><stop offset=".954" stop-color="#f7390a"/><stop offset="1" stop-color="#f73100"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yc)" d="M41.84,15H24c-4.97,0-9,4.03-9,9c0,1.49,0.36,2.89,1.01,4.13H16L7.16,13.26H7.14 C10.68,7.69,16.91,4,24,4C31.8,4,38.55,8.48,41.84,15z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yd" x1="19.05" x2="28.95" y1="30.95" y2="21.05" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yd)" d="M31,24c0,3.867-3.133,7-7,7s-7-3.133-7-7s3.133-7,7-7S31,20.133,31,24z"/></svg>
+                    </i>
+                      <a target="blank" href="https://rolling-scopes-school.github.io/s4m5apu3l-JSFEPRESCHOOL/media-hints/audio-player/" class="exp-item__url exp-item__deploy">Deploy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="exp__img-wrapper">
+                <img class="exp-image" src="./assets/img/tic tac toe.PNG" alt="tictac-promo">
+                <div class="exp__descr-block">
+                  <div class="exp__left-side">
+                    <h3 class="exp-item__title">Tic-Tac-Toe</h3>
+                    <p class="exp-item__descrp">Here I made tic-tac-toe, i was dissatisfied with the result,
+                      but i understood the essence, someday i will finish it
+                    </p>
+                  </div>
+                  <div class="exp-item__links">
+                    <i class="exp-item__icon">
+                      <svg class="exp-icon" style="width: 25px; height:25px;">
+                        <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                      </svg>
+                    </i>
+                      <a target="blank" href="https://rolling-scopes-school.github.io/s4m5apu3l-JSFEPRESCHOOL/js30-game-hints/tic-tac-toe/" class="exp-item__url exp-item__repo-url">Repo</a>
+                    <i class="exp-item__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="23px"><path fill="#fff" d="M34,24c0,5.521-4.479,10-10,10s-10-4.479-10-10s4.479-10,10-10S34,18.479,34,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1ya" x1="5.789" x2="31.324" y1="34.356" y2="20.779" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4caf50"/><stop offset=".489" stop-color="#4aaf50"/><stop offset=".665" stop-color="#43ad50"/><stop offset=".79" stop-color="#38aa50"/><stop offset=".892" stop-color="#27a550"/><stop offset=".978" stop-color="#11a050"/><stop offset="1" stop-color="#0a9e50"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1ya)" d="M31.33,29.21l-8.16,14.77C12.51,43.55,4,34.76,4,24C4,12.96,12.96,4,24,4v11 c-4.97,0-9,4.03-9,9s4.03,9,9,9C27.03,33,29.7,31.51,31.33,29.21z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yb" x1="33.58" x2="33.58" y1="6" y2="34.797" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd747"/><stop offset=".482" stop-color="#ffd645"/><stop offset=".655" stop-color="#fed43e"/><stop offset=".779" stop-color="#fccf33"/><stop offset=".879" stop-color="#fac922"/><stop offset=".964" stop-color="#f7c10c"/><stop offset="1" stop-color="#f5bc00"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yb)" d="M44,24c0,11.05-8.95,20-20,20h-0.84l8.17-14.79C32.38,27.74,33,25.94,33,24 c0-4.97-4.03-9-9-9V4c7.81,0,14.55,4.48,17.85,11C43.21,17.71,44,20.76,44,24z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yc" x1="36.128" x2="11.574" y1="44.297" y2="28.954" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f7572f"/><stop offset=".523" stop-color="#f7552d"/><stop offset=".712" stop-color="#f75026"/><stop offset=".846" stop-color="#f7461b"/><stop offset=".954" stop-color="#f7390a"/><stop offset="1" stop-color="#f73100"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yc)" d="M41.84,15H24c-4.97,0-9,4.03-9,9c0,1.49,0.36,2.89,1.01,4.13H16L7.16,13.26H7.14 C10.68,7.69,16.91,4,24,4C31.8,4,38.55,8.48,41.84,15z"/><linearGradient id="Pax8JcnMzivu8f~SZ~k1yd" x1="19.05" x2="28.95" y1="30.95" y2="21.05" gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#Pax8JcnMzivu8f~SZ~k1yd)" d="M31,24c0,3.867-3.133,7-7,7s-7-3.133-7-7s3.133-7,7-7S31,20.133,31,24z"/></svg>
+                    </i>
+                      <a target="blank" href="https://rolling-scopes-school.github.io/s4m5apu3l-JSFEPRESCHOOL/js30-game-hints/tic-tac-toe/" class="exp-item__url exp-item__deploy">Deploy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <!-- ____________ -->
+      <section id="courses" class="courses">
+        <div class="crs-title__wrapper">
+          <h2 class="courses-title">Courses</h2>
+        </div>
+        <div class="crs-items__wrapper">
+          <ul class="crs__card-list">
+            <li class="crs__card-item">
+              <h3 class="crs__card-title">Stepik</h3>
+              <p class="crs__card-p">On this site i took the course "HTML & CSS"
+                mini course where I learned the basics.
+              </p>
+            </li>
+            <li class="crs__card-item">
+              <h3 class="crs__card-title">The Rolling Scopes</h3>
+              <p class="crs__card-p">At the moment iam still taking this course, very good platform where people teach frontend.
+                I'm going to continue to finish this course, it lasts about 5-7 months.
+              </p>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </section>
+      <section id="language" class="language">
+        <div class="lang-title__wrapper">
+          <h2 class="lang-title">Language</h2>
+        </div>
+        <div class="lang-items-wrapper">
+          <ul class="lang-items">
+            <li class="lang-item">
+              <h3 class="lang-item__title">Russian</h3>
+              <span>Good</span>
+              <progress class="skills-card__progress-bar" value="99" max="100"></progress>
+            </li>
+            <li class="lang-item">
+              <h3 class="lang-item__title">English</h3>
+              <span>Pre-intermediate</span>
+              <progress class="skills-card__progress-bar" value="25" max="100"></progress>
+            </li>
+            <li class="lang-item">
+              <h3 class="lang-item__title">Yakutian</h3>
+              <span>Native</span>
+              <progress class="skills-card__progress-bar" value="100" max="100"></progress>
+            </li>
+          </ul>
+        </div>
+
+      </section>
     </main>
     <footer class="footer wrapper"></footer>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
