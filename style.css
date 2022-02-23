@@ -105,6 +105,10 @@ li {
   height: 100vh;
 }
 
+#language {
+  height: 100vh;
+}
+
 .hero {
   
   padding-top: 18rem;
@@ -116,11 +120,27 @@ li {
   font-weight: 100;
   font-size: 4rem;
   text-shadow: 0 0px 10px rgba(251, 12, 211, 0.9);
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 1.2s ease 0s;
+}
+.hero-title.active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .hero-description {
   color: var(--color-white2);
   max-width: 80%;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.hero-description.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 1s ease 0.3s;
 }
 
 .social-items {
@@ -130,6 +150,15 @@ li {
   padding-top: 50px;
   gap: 35px;
   position: relative;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.social-items.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 1s ease 0.5s;
 }
 
 .icon {
@@ -151,7 +180,16 @@ li {
   height: 50%;
   width: 25%;
   border-radius: 50%;
-  box-shadow: 0px 0px 15px 11px #26272c
+  box-shadow: 0px 0px 15px 11px #26272c;
+
+  transform: translate(300%, 30%);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.hero-photo.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 1s ease 0.3s;
 }
 
 /* ____ABOUT ME___ */
@@ -168,6 +206,15 @@ li {
   font-weight: 100;
   padding-bottom: 30px;
   position: relative;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all .6s ease 0s;
+}
+.about-me__title.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .6s ease 0.3s;
 }
 
 .about-me__title::after {
@@ -185,6 +232,15 @@ li {
 
 .about-me__p {
   max-width: 80%;
+  
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all .6s ease 0s;
+}
+.about-me__p.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .6s ease 0.4s;
 }
 
 .about-me__left {
@@ -193,6 +249,15 @@ li {
 
 .about-me__img {
   max-width: 50%;
+
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .9s ease 0s;
+}
+.about-me__img.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .9s ease 0.4s;
 }
 
 /* _______SKILLS______ */
@@ -216,6 +281,7 @@ justify-content: center;
   align-items: center;
   justify-content: start;
   gap: 3rem;
+  
 }
 
 .skills-title {
@@ -224,6 +290,10 @@ justify-content: center;
   letter-spacing: 3px;
   position: relative;
   padding-bottom: 30px;
+
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .6s ease 0s;
 }
 .skills-title::after {
   background-color: var( --color-violet);
@@ -236,6 +306,11 @@ justify-content: center;
   height: 3px;
   border-radius: 10px;
 }
+.skills-title.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .6s ease .2s;
+}
 
 .skills-items {
   display: flex;
@@ -243,6 +318,83 @@ justify-content: center;
   align-items: center;
   padding-top: 30px;
   color: var(--color-white2);
+}
+
+.html {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .7s ease 0s;
+}
+.html.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .7s ease 0.4s;
+}
+
+.css {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .7s ease 0s;
+}
+.css.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .7s ease 0.5s;
+}
+
+.js {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .7s ease 0s;
+}
+.js.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .7s ease 0.6s;
+}
+
+.git {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .7s ease 0s;
+}
+.git.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .7s ease 0.7s;
+}
+
+.figma {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .7s ease 0s;
+}
+.figma.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .7s ease 0.8s;
+}
+
+.github {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .7s ease 0s;
+}
+.github.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .7s ease 0.9s;
+}
+
+.faceit {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .7s ease 0s;
+}
+.faceit.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .7s ease 1s;
 }
 
 .skills-icon {
@@ -377,6 +529,9 @@ justify-content: center;
   position: relative;
   margin-bottom: 30px;
   
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .7s ease 0s;
 }
 .courses-title::after {
   background-color: var( --color-violet);
@@ -389,6 +544,11 @@ justify-content: center;
   height: 3px;
   border-radius: 10px;
 }
+.courses-title.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .7s ease .2s;
+}
 
 .crs__card-title {
   font-weight: 100;
@@ -397,6 +557,8 @@ justify-content: center;
 }
 .crs__card-p {
   padding: 10px;
+
+  
 }
 
 .crs__card-item {
@@ -405,4 +567,63 @@ justify-content: center;
   border-radius: 10px;
   padding: 10px 0 10px 20px;
   margin-top: 20px;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all .7s ease 0s;
+}
+.crs__card-item.active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all .7s ease .2s;
+}
+
+
+
+/* ____________LANGUAGE_____________ */
+.lang-title__wrapper {
+  color: var(--color-white2);
+  font-weight: 100;
+  align-self: flex-start;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.lang-title {
+  font-weight: 100;
+}
+.lang-title::after {
+  background-color: var( --color-violet);
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 9rem;
+  height: 3px;
+  border-radius: 10px;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white2);
+}
+
+.lang-items {
+  display: flex;
+
+gap: 5rem;
+}
+
+.footer-icon {
+  width: 55px;
+  height: 55px;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
