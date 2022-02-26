@@ -19,10 +19,7 @@ const swiper = new Swiper(".my-swiper", {
   },
 });
 
-console.log('true');
-
 // animation scroll
-
 const anime = document.querySelectorAll('.animation');
 
 if (anime.length > 0) {
@@ -59,3 +56,27 @@ if (anime.length > 0) {
   }
   animeScroll();
 }
+
+// MENU BURGER 
+const burger = document.querySelector('.header__burger-btn');
+const menu = document.querySelector('.header-nav__list');
+const body = document.body;
+
+let menuOpen = false;
+
+burger.addEventListener('click', () => {
+  if(!menuOpen) {
+    burger.classList.toggle('opened');
+    burger.setAttribute('aria-expanded', burger.classList.contains('opened'));
+    body.classList.toggle('noscroll')
+    menu.classList.toggle('active');
+  }
+});
+
+function closeMenu() {
+  menu.classList.remove('active');
+  burger.classList.remove('opened');
+  body.classList.remove('noscroll')
+}
+const navLinks = document.querySelectorAll('.link');
+navLinks.forEach((el) => el.addEventListener('click', closeMenu,));
