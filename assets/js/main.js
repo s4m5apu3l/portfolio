@@ -19,10 +19,7 @@ const swiper = new Swiper(".my-swiper", {
   },
 });
 
-console.log('true');
-
 // animation scroll
-
 const anime = document.querySelectorAll('.animation');
 
 if (anime.length > 0) {
@@ -61,7 +58,6 @@ if (anime.length > 0) {
 }
 
 // MENU BURGER 
-
 const burger = document.querySelector('.header__burger-btn');
 const menu = document.querySelector('.header-nav__list');
 const body = document.body;
